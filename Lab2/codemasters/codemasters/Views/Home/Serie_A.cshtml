@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<h1 id="EPL">Italian Serie A standings:</h1>
+<img src="http://www.istoriafotbalului.com/wp-content/uploads/2012/04/Serie-A-trophy.png" width="500px" height="700px" align="right">
+<table border="1" cellpadding="15" cellspacing="15">
+    <tr>
+        <th>Place</th>
+        <th>Team</th>
+        <th>wins</th>
+        <th>draws</th>
+        <th>loses</th>
+        <th>gols</th>
+        <th>points</th>
+    </tr>
+    @foreach (var team in ViewBag.SerieAteams)
+    {
+        if (team.place >= ViewBag.HOT.ChampionLeagueGroupStageMin && team.place <= ViewBag.HOT.ChampionLeagueGroupStageMax)
+        {
+            <tr class="TableBlue">
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+        else if (team.place >= ViewBag.HOT.ChampionLeagueQualificationMin && team.place <= ViewBag.HOT.ChampionLeagueQualificationMax)
+        {
+            <tr class="TableBlueLight">
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+        else if (team.place >= ViewBag.HOT.EuropaLeagueGroupStageMin && team.place <= ViewBag.HOT.EuropaLeagueGroupStageMax)
+        {
+            <tr class="TableGreen">
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+        else if (team.place >= ViewBag.HOT.EuropaLeagueQualificationMin && team.place <= ViewBag.HOT.EuropaLeagueQualificationMax)
+        {
+            <tr class="TableYellow">
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+        else if (team.place >= ViewBag.HOT.OutOfLeagueAdditionalMatchMin && team.place <= ViewBag.HOT.OutOfLeagueAdditionalMatchMax)
+        {
+            <tr class="TableRedLite">
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+        else if (team.place >= ViewBag.HOT.OutOfLeagueMin && team.place <= ViewBag.HOT.OutOfLeagueMax)
+        {
+            <tr class="TableRed">
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <th>@team.place</th>
+                <th>@team.name</th>
+                <th>@team.wins</th>
+                <th>@team.draws</th>
+                <th>@team.loses</th>
+                <th>@team.gols</th>
+                <th>@team.points</th>
+            </tr>
+        }
+    }
+</table>

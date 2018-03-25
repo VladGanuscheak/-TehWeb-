@@ -1,0 +1,42 @@
+﻿@foreach (var igrok in ViewBag.Player)
+{
+    <b>=============================================================================================</b>
+    <img src=@igrok.url align="right" weight="180" height="230" />
+    <table border="1" cellpadding="15" cellspacing="15">
+        <tr class="BigText; TableRed">
+            <td><b>@igrok.name</b></td>
+            <td><b>@igrok.currentClub</b></td>
+            <td><b>@igrok.currentLeague</b></td>
+            <td><b>Total matches @igrok.stats.TotalMatches</b></td>
+            <td><b>Total gols @igrok.stats.TotalGols</b></td>
+        </tr>
+        @for (int i = 0; i < igrok.stats.matches.Count; i++)
+        {
+            if (igrok.stats.matches[i] > 0)
+            {
+                <tr class="BigText; TableGreen">
+                    @switch (i)
+                    {
+                        case 0:
+                            <td><b>EPL</b></td>
+                            break;
+                        case 1:
+                            <td><b>La Liga</b></td>
+                            break;
+                        case 2:
+                            <td><b>Bundesliga</b></td>
+                            break;
+                        case 3:
+                            <td><b>Serie A</b></td>
+                            break;
+                        case 4:
+                            <td><b>Ligue 1</b></td>
+                            break;
+                    }
+                    <td><b>Matches @igrok.stats.matches[i]</b></td>
+                    <td colspan="3"><b>Gols @igrok.stats.gols[i]</b></td>
+                </tr>
+            }
+        }
+    </table>
+}
