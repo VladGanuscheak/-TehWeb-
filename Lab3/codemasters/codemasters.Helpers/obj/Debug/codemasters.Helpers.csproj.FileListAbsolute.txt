@@ -1,0 +1,12 @@
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\codemasters.Helpers.dll
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\codemasters.Helpers.pdb
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\obj\Debug\codemasters.Helpers.csprojResolveAssemblyReference.cache
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\obj\Debug\codemasters.Helpers.csproj.CoreCompileInputs.cache
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\obj\Debug\codemasters.Helpers.dll
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\obj\Debug\codemasters.Helpers.pdb
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\codemasters.Helpers.dll.config
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\EntityFramework.dll
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\EntityFramework.xml
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+D:\-TehWeb-\Lab3\codemasters\codemasters.Helpers\obj\Debug\codemasters.Helpers.csproj.CopyComplete

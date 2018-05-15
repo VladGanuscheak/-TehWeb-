@@ -1,102 +1,133 @@
-﻿<!DOCTYPE html>
+﻿@model List<codemasters.Domain.Entities.Stats.BBVA>
 
-<h1 id="EPL">Spanish La Liga standings:</h1>
-<img src="https://i.pinimg.com/originals/f5/c3/48/f5c348fa9c32867bd966bb32e087df97.jpg" width="470" height="700" align="right">
-<table border="1" cellpadding="15" cellspacing="15">
-    <tr>
-        <th>Place</th>
-        <th>Team</th>
-        <th>wins</th>
-        <th>draws</th>
-        <th>loses</th>
-        <th>gols</th>
-        <th>points</th>
-    </tr>
-    @foreach (var team in ViewBag.BBVAteams)
+@{
+    ViewBag.Title = "BBVA";
+}
+
+
+<!DOCTYPE html>
+
+<img src="https://i.pinimg.com/originals/f5/c3/48/f5c348fa9c32867bd966bb32e087df97.jpg" width="1100px" height="1000px" align="center">
+<h1 id="Liga_BBVA">Spanish La Liga standings:</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Place</th>
+            <th>Team</th>
+            <th>Wins</th>
+            <th>Draws</th>
+            <th>Loses</th>
+            <th>Gols Scored</th>
+            <th>Gols Received</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    @foreach (var team in Model)
     {
-        if (team.place >= ViewBag.HOT.ChampionLeagueGroupStageMin && team.place <= ViewBag.HOT.ChampionLeagueGroupStageMax)
+        if (team.Id >= ViewBag.HOT.ChampionLeagueGroupStageMin && team.Id <= ViewBag.HOT.ChampionLeagueGroupStageMax)
         {
-            <tr class="TableBlue">
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr class="TableBlue">
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
-        else if (team.place >= ViewBag.HOT.ChampionLeagueQualificationMin && team.place <= ViewBag.HOT.ChampionLeagueQualificationMax)
+        else if (team.Id >= ViewBag.HOT.ChampionLeagueQualificationMin && team.Id <= ViewBag.HOT.ChampionLeagueQualificationMax)
         {
-            <tr class="TableBlueLight">
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr class="TableBlueLight">
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
-        else if (team.place >= ViewBag.HOT.EuropaLeagueGroupStageMin && team.place <= ViewBag.HOT.EuropaLeagueGroupStageMax)
+        else if (team.Id >= ViewBag.HOT.EuropaLeagueGroupStageMin && team.Id <= ViewBag.HOT.EuropaLeagueGroupStageMax)
         {
-            <tr class="TableGreen">
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr class="TableGreen">
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
-        else if (team.place >= ViewBag.HOT.EuropaLeagueQualificationMin && team.place <= ViewBag.HOT.EuropaLeagueQualificationMax)
+        else if (team.Id >= ViewBag.HOT.EuropaLeagueQualificationMin && team.Id <= ViewBag.HOT.EuropaLeagueQualificationMax)
         {
-            <tr class="TableYellow">
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr class="TableYellow">
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
-        else if (team.place >= ViewBag.HOT.OutOfLeagueAdditionalMatchMin && team.place <= ViewBag.HOT.OutOfLeagueAdditionalMatchMax)
+        else if (team.Id >= ViewBag.HOT.OutOfLeagueAdditionalMatchMin && team.Id <= ViewBag.HOT.OutOfLeagueAdditionalMatchMax)
         {
-            <tr class="TableRedLite">
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr class="TableRedLite">
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
-        else if (team.place >= ViewBag.HOT.OutOfLeagueMin && team.place <= ViewBag.HOT.OutOfLeagueMax)
+        else if (team.Id >= ViewBag.HOT.OutOfLeagueMin && team.Id <= ViewBag.HOT.OutOfLeagueMax)
         {
-            <tr class="TableRed">
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr class="TableRed">
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
         else
         {
-            <tr>
-                <th>@team.place</th>
-                <th>@team.name</th>
-                <th>@team.wins</th>
-                <th>@team.draws</th>
-                <th>@team.loses</th>
-                <th>@team.gols</th>
-                <th>@team.points</th>
-            </tr>
+            <tbody>
+                <tr>
+                    <th>@team.Id</th>
+                    <th>@team.Team</th>
+                    <th>@team.Wins</th>
+                    <th>@team.Draws</th>
+                    <th>@team.Loses</th>
+                    <th>@team.Gols_scored</th>
+                    <th>@team.Gols_received</th>
+                    <th>@team.Points</th>
+                </tr>
+            </tbody>
         }
     }
 </table>

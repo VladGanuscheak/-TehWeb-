@@ -1,4 +1,8 @@
-﻿@foreach (var igrok in ViewBag.Player)
+﻿@{
+    ViewBag.Title = "Top 5 Leagues";
+}
+
+@foreach (var igrok in ViewBag.Player)
 {
     <b>=============================================================================================</b>
     <img src=@igrok.url align="right" weight="180" height="230" />
