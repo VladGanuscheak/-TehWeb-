@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище codemastersModelContainer" CdmEntityContainer="codemastersEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="codemastersModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BBVA_Table">
+      <EntityTypeMapping TypeName="codemastersModel.BBVA_Table">
+        <MappingFragment StoreEntitySet="BBVA_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="Draws" ColumnName="Draws" />
+          <ScalarProperty Name="Loses" ColumnName="Loses" />
+          <ScalarProperty Name="Gols_scored" ColumnName="Gols_scored" />
+          <ScalarProperty Name="Gols_received" ColumnName="Gols_received" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bundesliga_Table">
+      <EntityTypeMapping TypeName="codemastersModel.Bundesliga_Table">
+        <MappingFragment StoreEntitySet="Bundesliga_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="Draws" ColumnName="Draws" />
+          <ScalarProperty Name="Loses" ColumnName="Loses" />
+          <ScalarProperty Name="Gols_scored" ColumnName="Gols_scored" />
+          <ScalarProperty Name="Gols_received" ColumnName="Gols_received" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPL_Table">
+      <EntityTypeMapping TypeName="codemastersModel.EPL_Table">
+        <MappingFragment StoreEntitySet="EPL_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="Draws" ColumnName="Draws" />
+          <ScalarProperty Name="Loses" ColumnName="Loses" />
+          <ScalarProperty Name="Gols_scored" ColumnName="Gols_scored" />
+          <ScalarProperty Name="Gols_received" ColumnName="Gols_received" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ligue1_Table">
+      <EntityTypeMapping TypeName="codemastersModel.Ligue1_Table">
+        <MappingFragment StoreEntitySet="Ligue1_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="Draws" ColumnName="Draws" />
+          <ScalarProperty Name="Loses" ColumnName="Loses" />
+          <ScalarProperty Name="Gols_scored" ColumnName="Gols_scored" />
+          <ScalarProperty Name="Gols_received" ColumnName="Gols_received" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SerieA_Table">
+      <EntityTypeMapping TypeName="codemastersModel.SerieA_Table">
+        <MappingFragment StoreEntitySet="SerieA_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="Wins" ColumnName="Wins" />
+          <ScalarProperty Name="Draws" ColumnName="Draws" />
+          <ScalarProperty Name="Loses" ColumnName="Loses" />
+          <ScalarProperty Name="Gols_scored" ColumnName="Gols_scored" />
+          <ScalarProperty Name="Gols_received" ColumnName="Gols_received" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UCL_Table">
+      <EntityTypeMapping TypeName="codemastersModel.UCL_Table">
+        <MappingFragment StoreEntitySet="UCL_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="League" ColumnName="League" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UDbTables">
+      <EntityTypeMapping TypeName="codemastersModel.UDbTables">
+        <MappingFragment StoreEntitySet="UDbTables">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="LasIp" ColumnName="LasIp" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

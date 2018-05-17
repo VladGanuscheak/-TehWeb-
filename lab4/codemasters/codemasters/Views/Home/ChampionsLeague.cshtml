@@ -1,0 +1,80 @@
+﻿@model List<codemasters.Domain.Entities.Stats.UCL>
+
+@{
+    ViewBag.Title = "UCL";
+}
+
+<img src="https://i2-prod.mirror.co.uk/incoming/article5928368.ece/ALTERNATES/s615/EPA2015-ONE-USE.jpg" width="1100" height="1000" align="right">
+<h1>The list of the European Champions League cup winners in the 21 century:</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Team</th>
+            <th>Year</th>
+            <th>League</th>
+        </tr>
+    </thead>
+    @foreach (var team in Model)
+    {
+        if (team.League == "La Liga")
+        {
+            <tbody>
+                <tr class="TableBlueLight">
+                    <th>@team.Team</th>
+                    <th>@team.Year</th>
+                    <th>@team.League</th>
+                </tr>
+            </tbody>
+        }
+        else if (team.League == "Serie A")
+        {
+            <tbody>
+                <tr class="TableGreen">
+                    <th>@team.Team</th>
+                    <th>@team.Year</th>
+                    <th>@team.League</th>
+                </tr>
+            </tbody>
+        }
+        else if (team.League == "Ligue 1")
+        {
+            <tbody>
+                <tr class="TableOrange">
+                    <th>@team.Team</th>
+                    <th>@team.Year</th>
+                    <th>@team.League</th>
+                </tr>
+            </tbody>
+        }
+        else if (team.League == "EPL")
+        {
+            <tbody>
+                <tr class="TableYellow">
+                    <th>@team.Team</th>
+                    <th>@team.Year</th>
+                    <th>@team.League</th>
+                </tr>
+            </tbody>
+        }
+        else if (team.League == "Bundesliga")
+        {
+            <tbody>
+                <tr class="TableRed">
+                    <th>@team.Team</th>
+                    <th>@team.Year</th>
+                    <th>@team.League</th>
+                </tr>
+            </tbody>
+        }
+        else
+        {
+            <tbody>
+                <tr>
+                    <th>@team.Team</th>
+                    <th>@team.Year</th>
+                    <th>@team.League</th>
+                </tr>
+            </tbody>
+        }
+    }
+</table>

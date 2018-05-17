@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="codemastersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BBVA_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Team" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Wins" Type="Int32" Nullable="false" />
+    <Property Name="Draws" Type="Int32" Nullable="false" />
+    <Property Name="Loses" Type="Int32" Nullable="false" />
+    <Property Name="Gols_scored" Type="Int32" Nullable="false" />
+    <Property Name="Gols_received" Type="Int32" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bundesliga_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Team" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Wins" Type="Int32" Nullable="false" />
+    <Property Name="Draws" Type="Int32" Nullable="false" />
+    <Property Name="Loses" Type="Int32" Nullable="false" />
+    <Property Name="Gols_scored" Type="Int32" Nullable="false" />
+    <Property Name="Gols_received" Type="Int32" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EPL_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Team" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Wins" Type="Int32" Nullable="false" />
+    <Property Name="Draws" Type="Int32" Nullable="false" />
+    <Property Name="Loses" Type="Int32" Nullable="false" />
+    <Property Name="Gols_scored" Type="Int32" Nullable="false" />
+    <Property Name="Gols_received" Type="Int32" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ligue1_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Team" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Wins" Type="Int32" Nullable="false" />
+    <Property Name="Draws" Type="Int32" Nullable="false" />
+    <Property Name="Loses" Type="Int32" Nullable="false" />
+    <Property Name="Gols_scored" Type="Int32" Nullable="false" />
+    <Property Name="Gols_received" Type="Int32" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SerieA_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Team" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Wins" Type="Int32" Nullable="false" />
+    <Property Name="Draws" Type="Int32" Nullable="false" />
+    <Property Name="Loses" Type="Int32" Nullable="false" />
+    <Property Name="Gols_scored" Type="Int32" Nullable="false" />
+    <Property Name="Gols_received" Type="Int32" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UCL_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Team" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="League" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UDbTables">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastLogin" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LasIp" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="codemastersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="BBVA_Table" EntityType="Self.BBVA_Table" />
+    <EntitySet Name="Bundesliga_Table" EntityType="Self.Bundesliga_Table" />
+    <EntitySet Name="EPL_Table" EntityType="Self.EPL_Table" />
+    <EntitySet Name="Ligue1_Table" EntityType="Self.Ligue1_Table" />
+    <EntitySet Name="SerieA_Table" EntityType="Self.SerieA_Table" />
+    <EntitySet Name="UCL_Table" EntityType="Self.UCL_Table" />
+    <EntitySet Name="UDbTables" EntityType="Self.UDbTables" />
+  </EntityContainer>
+</Schema>

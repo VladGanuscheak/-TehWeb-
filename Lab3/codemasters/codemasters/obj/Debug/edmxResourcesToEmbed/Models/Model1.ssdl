@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище codemastersModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BBVA_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Team" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Wins" Type="int" Nullable="false" />
+    <Property Name="Draws" Type="int" Nullable="false" />
+    <Property Name="Loses" Type="int" Nullable="false" />
+    <Property Name="Gols_scored" Type="int" Nullable="false" />
+    <Property Name="Gols_received" Type="int" Nullable="false" />
+    <Property Name="Points" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bundesliga_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Team" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Wins" Type="int" Nullable="false" />
+    <Property Name="Draws" Type="int" Nullable="false" />
+    <Property Name="Loses" Type="int" Nullable="false" />
+    <Property Name="Gols_scored" Type="int" Nullable="false" />
+    <Property Name="Gols_received" Type="int" Nullable="false" />
+    <Property Name="Points" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EPL_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Team" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Wins" Type="int" Nullable="false" />
+    <Property Name="Draws" Type="int" Nullable="false" />
+    <Property Name="Loses" Type="int" Nullable="false" />
+    <Property Name="Gols_scored" Type="int" Nullable="false" />
+    <Property Name="Gols_received" Type="int" Nullable="false" />
+    <Property Name="Points" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ligue1_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Team" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Wins" Type="int" Nullable="false" />
+    <Property Name="Draws" Type="int" Nullable="false" />
+    <Property Name="Loses" Type="int" Nullable="false" />
+    <Property Name="Gols_scored" Type="int" Nullable="false" />
+    <Property Name="Gols_received" Type="int" Nullable="false" />
+    <Property Name="Points" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SerieA_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Team" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Wins" Type="int" Nullable="false" />
+    <Property Name="Draws" Type="int" Nullable="false" />
+    <Property Name="Loses" Type="int" Nullable="false" />
+    <Property Name="Gols_scored" Type="int" Nullable="false" />
+    <Property Name="Gols_received" Type="int" Nullable="false" />
+    <Property Name="Points" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UCL_Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Team" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Year" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="League" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UDbTables">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="LastLogin" Type="datetime" Nullable="false" />
+    <Property Name="LasIp" Type="nvarchar" MaxLength="30" />
+    <Property Name="Level" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Хранилище codemastersModelContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BBVA_Table" EntityType="Self.BBVA_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bundesliga_Table" EntityType="Self.Bundesliga_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EPL_Table" EntityType="Self.EPL_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ligue1_Table" EntityType="Self.Ligue1_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SerieA_Table" EntityType="Self.SerieA_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UCL_Table" EntityType="Self.UCL_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UDbTables" EntityType="Self.UDbTables" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

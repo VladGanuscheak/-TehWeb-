@@ -1,0 +1,54 @@
+﻿body {
+    background-image: url("http://perego-shop.ru/gallery/images/523701_futbolnyi-fon-dlya-saita.jpg");
+}
+
+.HeaderText-h1
+{
+    text-align: center;
+}
+
+.ImportantInfo 
+{
+    text-indent: 35px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p, ol {
+    color:yellow;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.RoundedImage {
+    border-radius: 75%;
+}
+
+.BigText
+{
+    line-height: 1.8;
+}
+.TableBlue {
+    background:#4800ff;
+}
+.TableBlueLight {
+    background:#0094ff;
+}
+.TableGreen
+{
+    background:#4cff00;
+}
+.TableYellow {
+    background:#ffd800;
+}
+.TableRedLite {
+    background:#ff006e;
+}
+.TableRed {
+    background:#ff0000;
+}
+.TableOrange {
+    background:#ff6a00;
+}
